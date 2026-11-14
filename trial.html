@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="选择训练水平、目标、次数和可用时间，生成 GymPath 训练计划，查看动作、预计用时和休息安排。无需账号。">
+    <title>GymPath / 计划试用</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261012-public2">
+    <script src="trial.js?v=20261012-public2" defer></script>
+  </head>
+  <body class="demo-page trial-page">
+    <a class="skip-link" href="#trial-main">跳到主要内容</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="返回 GymPath 首页"><img src="assets/mark.svg" width="34" height="34" alt=""><span>GYMPATH</span><small>计划试用</small></a>
+        <a class="back-link" href="account.html">我的账号 ↗</a>
+      </div>
+    </header>
+    <main id="trial-main" class="demo-shell shell">
+      <div class="demo-intro">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> GYMPATH / PLAN TRIAL</p>
+        <h1>安排你的<br><em>下一次训练。</em></h1>
+        <p>选择训练水平、目标、每周次数和可用时间，生成一份训练计划。无需账号。</p>
+      </div>
+      <div id="service-status" class="service-status" role="status" aria-live="polite"><strong>正在连接计划服务…</strong><p>连接后可以生成计划，也可先查看固定示例。</p><a class="text-link" href="demo.html">查看固定演示 ↗</a></div>
+      <div class="trial-layout">
+        <section class="demo-section trial-profile" aria-labelledby="trial-form-title">
+          <p class="eyebrow">01 / YOUR PREFERENCES</p><h2 id="trial-form-title">设置训练偏好</h2>
+          <form id="trial-form" novalidate>
+            <p class="form-note">四项偏好会发送到 GymPath 服务用于生成计划。只有登录后点击“保存到账号”，才会保存计划和偏好。</p>
+            <fieldset disabled>
+              <div class="form-field"><label for="trial-level">训练水平</label><select id="trial-level" name="level"><option value="beginner">新手 / 刚开始规律训练</option><option value="restarting">恢复训练 / 有一定基础</option><option value="experienced">有经验 / 已规律训练</option></select></div>
+              <div class="form-field"><label for="trial-goal">本次目标</label><select id="trial-goal" name="goal"><option value="muscle_gain">增肌</option><option value="strength_gain">增强力量</option><option value="fat_loss">减脂</option><option value="health">健康 / 居家活动</option></select></div>
+              <div class="form-field"><label for="trial-days">每周最多安排几次训练？</label><input id="trial-days" name="days_per_week" type="number" min="1" max="7" step="1" value="3" required aria-describedby="trial-days-note trial-days-error"><small id="trial-days-error" class="field-error"></small></div>
+              <p id="trial-days-note" class="form-note">计划不会超过这个次数。新手和恢复训练者最多四次，有经验者最多六次，训练之间留出休息日。</p>
+              <div class="form-field"><label for="trial-minutes">每次可用时间（分钟）</label><input id="trial-minutes" name="minutes_per_session" type="number" min="15" max="180" step="1" value="45" required aria-describedby="trial-minutes-note trial-minutes-error"><small id="trial-minutes-error" class="field-error"></small></div>
+              <p id="trial-minutes-note" class="form-note">预计时间含热身、动作和休息。时间较短时减少组数和辅助动作；排队、实际节奏或额外热身可能增加用时。</p>
+              <button id="generate-plan" class="button button-light" type="submit">生成训练计划 <span aria-hidden="true">↗</span></button>
+            </fieldset>
+            <div id="trial-error" class="form-result is-error" role="alert" tabindex="-1" hidden></div>
+            <noscript><p class="noscript-note">请启用 JavaScript 连接计划服务。当前表单已禁用，不会提交。</p></noscript>
+          </form>
+        </section>
+        <section class="demo-section trial-result-section" aria-labelledby="trial-result-title">
+          <div class="demo-section-header"><div><p class="eyebrow">02 / YOUR PLAN</p><h2 id="trial-result-title">你的训练计划</h2></div><span class="section-mark">02</span></div>
+          <div id="trial-empty" class="trial-empty"><span aria-hidden="true">↗</span><h3>填写偏好后，计划会显示在这里。</h3><p>查看动作和预计用时，也可打印完整计划。</p></div>
+          <div id="trial-result" hidden>
+            <div id="plan-summary" class="plan-summary" tabindex="-1" role="region" aria-label="生成的计划摘要"></div>
+            <div class="plan-toolbar"><button id="save-plan" class="button button-light" type="button" disabled>保存到账号</button><button id="print-plan" class="button button-text" type="button">打印完整计划 <span aria-hidden="true">↗</span></button></div>
+            <p id="save-status" class="form-note" role="status" aria-live="polite"></p>
+            <div id="trial-day-buttons" class="trial-day-buttons" role="tablist" aria-label="生成计划的训练日"></div>
+            <div id="trial-day-content" role="tabpanel" tabindex="0"></div>
+            <p class="form-note">计划未评估个人身体情况，不适用于医疗或伤病康复。出现锐痛或持续加重的不适时，请停止并寻求专业帮助。</p>
+          </div>
+        </section>
+      </div>
+      <div class="trial-bottom"><a class="text-link" href="index.html">← 返回产品介绍</a><a class="text-link" href="account.html">注册 / 登录 ↗</a><a class="text-link" href="demo.html">查看固定演示 ↗</a></div>
+    </main>
+    <section id="print-plan-content" class="print-plan-content" aria-label="完整计划打印内容"></section>
+    <footer class="site-footer"><div class="shell footer-inner"><span>GYMPATH / PLAN TRIAL</span><span>先试用，再保存</span></div></footer>
+  </body>
+</html>

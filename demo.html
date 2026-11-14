@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GymPath 训练演示：查看训练示例并体验练后反馈流程。">
+    <title>GymPath / 训练示例</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261012-public2">
+    <script src="script.js?v=20261012-public2" defer></script>
+  </head>
+  <body class="demo-page">
+    <a class="skip-link" href="#demo-main">跳到主要内容</a>
+    <header class="site-header site-header-dark">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="返回 GymPath 首页"><img src="assets/mark.svg" width="34" height="34" alt=""><span>GYMPATH</span><small>训练示例</small></a>
+        <a class="back-link" href="index.html">← 返回介绍</a>
+      </div>
+    </header>
+    <main id="demo-main" class="demo-shell shell">
+      <div class="demo-intro"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> GYMPATH / DEMO</p><h1>查看示例，<br><em>体验反馈。</em></h1><p>选择训练示例，查看动作，体验练后反馈。想保存计划，可以注册账号。</p></div>
+      <div class="demo-layout">
+        <aside class="demo-sidebar" aria-label="选择演示计划">
+          <p class="eyebrow">TRAINING EXAMPLES</p>
+          <div class="demo-plan-tabs" role="tablist" aria-label="演示计划">
+            <button id="plan-tab-start" type="button" class="demo-plan-tab is-active" role="tab" aria-selected="true" aria-controls="plan-panel" data-plan="start"><span>01</span><strong>健身入门</strong><small>热身与基础动作</small></button>
+            <button id="plan-tab-strength" type="button" class="demo-plan-tab" role="tab" aria-selected="false" aria-controls="plan-panel" data-plan="strength"><span>02</span><strong>基础力量</strong><small>全身力量练习</small></button>
+            <button id="plan-tab-recovery" type="button" class="demo-plan-tab" role="tab" aria-selected="false" aria-controls="plan-panel" data-plan="recovery"><span>03</span><strong>恢复训练</strong><small>轻量动作练习</small></button>
+          </div>
+          <div class="demo-boundary"><strong>使用说明</strong><p>固定示例不是个人建议，不用于伤病康复。</p></div>
+          <div class="demo-trial-link"><p>按训练偏好生成计划</p><a class="text-link" href="trial.html">进入计划试用 ↗</a></div>
+        </aside>
+        <div class="demo-content">
+          <section id="plan-panel" class="demo-section plan-section" role="tabpanel" aria-labelledby="plan-tab-start" tabindex="0">
+            <div class="demo-section-header"><div><p class="eyebrow" id="plan-kicker">STARTER / DAY 01</p><h2 id="plan-heading">健身入门</h2></div><span id="plan-duration" class="duration-badge">固定示例</span></div>
+            <p id="plan-description" class="demo-lede">从热身、深蹲和俯卧撑开始，练习基本动作。</p>
+            <div class="day-switcher" role="tablist" aria-label="训练日"><button id="day-tab-0" type="button" class="day-button is-active" role="tab" aria-controls="day-panel" aria-selected="true" data-day="0">DAY 01 <span>开始</span></button><button id="day-tab-1" type="button" class="day-button" role="tab" aria-controls="day-panel" aria-selected="false" data-day="1">DAY 02 <span>移动</span></button><button id="day-tab-2" type="button" class="day-button" role="tab" aria-controls="day-panel" aria-selected="false" data-day="2">DAY 03 <span>恢复</span></button></div>
+            <div id="day-panel" class="day-panel" role="tabpanel" aria-labelledby="day-tab-0" tabindex="0">
+              <p class="sample-label">固定示例安排</p>
+              <div class="warmup-strip"><strong>先热身</strong><p>轻松走动 5 分钟，再用轻重量或徒手熟悉今天的动作。</p></div>
+              <ol class="exercise-list">
+                <li><details class="exercise-item"><summary class="exercise-summary"><span class="exercise-count">01</span><span class="exercise-info"><strong class="exercise-name">杯式深蹲</strong><span class="exercise-prescription">2 组 × 8 次 / 休息 90 秒</span></span><span aria-hidden="true">+</span></summary><p class="exercise-detail">脚掌贴地，缓慢下蹲到能控制的位置，再站起。选择能保持动作稳定的重量。</p></details></li>
+                <li><details class="exercise-item"><summary class="exercise-summary"><span class="exercise-count">02</span><span class="exercise-info"><strong class="exercise-name">斜板俯卧撑</strong><span class="exercise-prescription">2 组 × 6–8 次 / 休息 90 秒</span></span><span aria-hidden="true">+</span></summary><p class="exercise-detail">双手撑在稳固台面上，身体保持直线，缓慢屈肘下降再推起。</p></details></li>
+              </ol>
+              <noscript><p class="noscript-note">启用 JavaScript 后可切换示例和训练日。</p></noscript>
+            </div>
+          </section>
+          <section class="demo-section feedback-section" aria-labelledby="feedback-heading">
+            <div class="demo-section-header"><div><p class="eyebrow">POST / FEEDBACK</p><h2 id="feedback-heading">试一次练后反馈</h2></div><span class="section-mark">02</span></div>
+            <p class="demo-lede">选择疲劳程度和不适情况，查看反馈示例。反馈不是诊断，不会改变上面的计划。</p>
+            <form id="feedback-form" class="feedback-form" novalidate>
+              <p class="form-note">演示表单：不会提交或保存信息。出现锐痛、放射痛、麻木或持续加重的不适时，应停止训练并寻求专业帮助。</p>
+              <fieldset disabled>
+              <div class="form-field"><label for="fatigue">今天的疲劳程度 <output id="fatigue-output" for="fatigue">5 / 10</output></label><input id="fatigue" name="fatigue" type="range" min="1" max="10" value="5"></div>
+              <div class="form-field"><label for="discomfort">训练中有明显不适吗？</label><select id="discomfort" name="discomfort"><option value="none">没有明显不适</option><option value="tired">只是比平时更累</option><option value="pain">有锐痛、麻木或持续加重的不适</option></select></div>
+              <button class="button button-light" type="submit">查看反馈示例 <span aria-hidden="true">↗</span></button>
+              </fieldset>
+              <div id="feedback-result" class="feedback-result" role="status" aria-live="polite" hidden></div>
+              <noscript><p class="noscript-note">请启用 JavaScript 使用反馈演示；表单已禁用。</p></noscript>
+            </form>
+          </section>
+          <section id="register" class="demo-section register-section" aria-labelledby="register-heading">
+            <div class="demo-section-header"><div><p class="eyebrow">NEXT / YOUR ACCOUNT</p><h2 id="register-heading">保存你的训练计划</h2></div><span class="section-mark">03</span></div>
+            <p class="demo-lede">创建账号后，可以保存计划，下次登录继续查看。</p>
+            <a class="button button-light" href="account.html">注册 / 登录 <span aria-hidden="true">↗</span></a>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><span>GYMPATH / DEMO</span><a href="index.html">返回首页 ↗</a><a href="account.html">我的账号 ↗</a></div></footer>
+  </body>
+</html>

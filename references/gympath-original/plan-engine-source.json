@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "extraction_date": "2026-10-12",
+  "source": {
+    "project": "GymPath training rules",
+    "file": "D:\\大三下\\programming\\group project\\project.py",
+    "git_head": "b11a43c9794e91f1c592f6988b9e40c7fef80c97",
+    "sha256": "24aab384f75f0f3974bb5865a00affca55ed809138f57d6bf54a9db2f64a87ca",
+    "sha256_scope": "Original project.py file bytes at extraction; no .env, database or uploaded photos were read or copied."
+  },
+  "output": {
+    "file": "backend/plan_engine.py",
+    "sha256": "5134e08236755326f61753e51fc4551d30502dcdd5fd006fdf4d19ed4ee43ebc",
+    "entrypoint": "generate_workout_plan",
+    "imports": [
+      "__future__.annotations",
+      "typing.Any"
+    ]
+  },
+  "extraction_method": "Parse source with ast; recursively select module-level function and constant references from generate_workout_plan; stop at the replacement catalog enrichment boundary. Copy original source spans in source order with internal comments intact. Do not import or execute the original module.",
+  "functions": [
+    {
+      "name": "recommend_training_split",
+      "kind": "function",
+      "source_lines": {
+        "start": 1452,
+        "end": 1514
+      },
+      "original_segment_sha256": "d8704cc8c8ea321b9853c7656840148f01ae364e054aee35bef5fb2d483c0c91",
+      "modified": false
+    },
+    {
+      "name": "generate_workout_plan",
+      "kind": "function",
+      "source_lines": {
+        "start": 1517,
+        "end": 1610
+      },
+      "original_segment_sha256": "7610f4bba40ac07eb57bc9cbe4714c469306278acee4c2c2d3ac8068451a04cf",
+      "modified": false
+    },
+    {
+      "name": "enrich_workout_plan",
+      "kind": "function",
+      "source_lines": {
+        "start": 1613,
+        "end": 1625
+      },
+      "original_segment_sha256": "c9883b39e290c1372d12bdf2a6e4a8902e31366279ac3efbff879b48375d3446",
+      "modified": true
+    },
+    {
+      "name": "_normalize_goal",
+      "kind": "function",
+      "source_lines": {
+        "start": 2074,
+        "end": 2089
+      },
+      "original_segment_sha256": "14200140721679f50e5951a6ea3f1653e805bb59b3db5b11e07c0673faf37b58",
+      "modified": false
+    },
+    {
+      "name": "_normalize_level",
+      "kind": "function",
+      "source_lines": {
+        "start": 2092,
+        "end": 2106
+      },
+      "original_segment_sha256": "d07b81a26a29af514c2a3d8092e8dbb480fc1d84dedb7ad30460ad61918c0738",
+      "modified": false
+    },
+    {
+      "name": "_recommended_rest_seconds",
+      "kind": "function",
+      "source_lines": {
+        "start": 2166,
+        "end": 2170
+      },
+      "original_segment_sha256": "a2d5270c73a088ae6d252f7a7ed26afe6558b8406ab0bd9d11afecd73f2ccbdb",
+      "modified": false
+    },
+    {
+      "name": "_exercise",
+      "kind": "function",
+      "source_lines": {
+        "start": 2173,
+        "end": 2283
+      },
+      "original_segment_sha256": "5490b239a0eb6332a934eb20421e55bf485c0262408ddeb1c9a20ac1666a055d",
+      "modified": false
+    },
+    {
+      "name": "_muscle_gain_workout_plan",
+      "kind": "function",
+      "source_lines": {
+        "start": 2286,
+        "end": 2328
+      },
+      "original_segment_sha256": "e2f1d0d96daf9158fcdcaf272cdc73ceb809c57831504c85614571aa77b55f12",
+      "modified": false
+    },
+    {
+      "name": "_normalize_muscle_gain_plan_type",
+      "kind": "function",
+      "source_lines": {
+        "start": 2331,
+        "end": 2351
+      },
+      "original_segment_sha256": "b3a434527126d260fb95754172b9ac6b53593db9bb468b161c52b63f4c40fc33",
+      "modified": false
+    },
+    {
+      "name": "_muscle_day",
+      "kind": "function",
+      "source_lines": {
+        "start": 2354,
+        "end": 2385
+      },
+      "original_segment_sha256": "a7bd86071ced316db177e2d2f04943a571bf71909629cc0bac2f5472478fa8cb",
+      "modified": false
+    },
+    {
+      "name": "_program_rest_day",
+      "kind": "function",
+      "source_lines": {
+        "start": 2388,
+        "end": 2397
+      },
+      "original_segment_sha256": "d354fc6ae56951c161dcd9b456bee33a11977de259b528e42bc599b549cf51bf",
+      "modified": false
+    },
+    {
+      "name": "_tan_kaisheng_three_split_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 2400,
+        "end": 2447
+      },
+      "original_segment_sha256": "8623af10492183d40ac858a3db814a9bdc86a21d715d4be851a1cb1c9d583f97",
+      "modified": false
+    },
+    {
+      "name": "_orange_hypertrophy_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 2450,
+        "end": 2641
+      },
+      "original_segment_sha256": "bb64c34586648d9e537f55aa0024fc1679f6edacc50cbf1ba8eb6093bec542b2",
+      "modified": false
+    },
+    {
+      "name": "_muscle_gain_plan_brief",
+      "kind": "function",
+      "source_lines": {
+        "start": 2644,
+        "end": 2671
+      },
+      "original_segment_sha256": "a453b3399ad73b1342d29a050f1c8ca9760d96278e92a3176f08b366b098c2df",
+      "modified": false
+    },
+    {
+      "name": "_strength_workout_plan",
+      "kind": "function",
+      "source_lines": {
+        "start": 2674,
+        "end": 2719
+      },
+      "original_segment_sha256": "e9e0c2d692d2cad6c0f745de9f2fb5e264f094b7c0f0679060403668fffa91dc",
+      "modified": false
+    },
+    {
+      "name": "_normalize_strength_plan_type",
+      "kind": "function",
+      "source_lines": {
+        "start": 2722,
+        "end": 2745
+      },
+      "original_segment_sha256": "da1236f37ce68a6e765c0f4196d6ec05809d10c4f69a1154a9fe10e6d4c3a9bf",
+      "modified": false
+    },
+    {
+      "name": "_strength_exercise",
+      "kind": "function",
+      "source_lines": {
+        "start": 2748,
+        "end": 2760
+      },
+      "original_segment_sha256": "b3c654226630d0822e3fb6501f28fd72c1d25a64a647c81f7dcdd40726caff23",
+      "modified": false
+    },
+    {
+      "name": "_strength_day",
+      "kind": "function",
+      "source_lines": {
+        "start": 2763,
+        "end": 2772
+      },
+      "original_segment_sha256": "fcaf9f78363279c3434274eceaeeaa34749b745cbfd1080c976deda7483f5d97",
+      "modified": false
+    },
+    {
+      "name": "_beginner_ab_strength_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 2775,
+        "end": 2808
+      },
+      "original_segment_sha256": "0a93303958d3b118f3587ded0f40a931eac4487770b3e1d3f175c17fa3aecce6",
+      "modified": false
+    },
+    {
+      "name": "_advanced_linear_strength_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 2811,
+        "end": 2866
+      },
+      "original_segment_sha256": "d54cc7f086d2fa082ea600cc1eeeed22c927a5b21acf7fb30d5c144eaf31f316",
+      "modified": false
+    },
+    {
+      "name": "_universal_5x5_strength_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 2869,
+        "end": 2917
+      },
+      "original_segment_sha256": "d6f77044ce6f823efd6cb4842b39281ecb7a0cf74a6577c45f506f515c16111f",
+      "modified": false
+    },
+    {
+      "name": "_strength_plan_brief",
+      "kind": "function",
+      "source_lines": {
+        "start": 2920,
+        "end": 2985
+      },
+      "original_segment_sha256": "f2c50b5c5dc8e0c566f5f7a09d2ae0a2e589c47ce5f4e975a91d642f4f997e9d",
+      "modified": false
+    },
+    {
+      "name": "_plan_templates",
+      "kind": "function",
+      "source_lines": {
+        "start": 2988,
+        "end": 3007
+      },
+      "original_segment_sha256": "998db664c5f5c822003bf67353fae5689bb29ad75df3000656eb036ede38bd7a",
+      "modified": false
+    },
+    {
+      "name": "_health_home_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 3010,
+        "end": 3084
+      },
+      "original_segment_sha256": "09312d37ace2e250d5e8dff57bfc88d30e267542358922b55dfc09eb0ed32d64",
+      "modified": false
+    },
+    {
+      "name": "_beginner_four_day_schedule",
+      "kind": "function",
+      "source_lines": {
+        "start": 3087,
+        "end": 3209
+      },
+      "original_segment_sha256": "9248c1c1d2edf0ba4ac5ac6ac1bf4070e25d7a56f8192d8bc47eee63b4dfc6b1",
+      "modified": false
+    },
+    {
+      "name": "_warmup_for_focus",
+      "kind": "function",
+      "source_lines": {
+        "start": 3212,
+        "end": 3219
+      },
+      "original_segment_sha256": "4b90fcaa62150a9fd181b76f2efcb8ab576a69cfce4b909c04cca961bcd549f9",
+      "modified": false
+    },
+    {
+      "name": "_session_rest_policy",
+      "kind": "function",
+      "source_lines": {
+        "start": 3222,
+        "end": 3226
+      },
+      "original_segment_sha256": "180bfc139404a92edfb21903202a311725c8c509f73aa5f941bf05671243f960",
+      "modified": false
+    },
+    {
+      "name": "_session_note",
+      "kind": "function",
+      "source_lines": {
+        "start": 3229,
+        "end": 3236
+      },
+      "original_segment_sha256": "2226017691979eeb3ca07f270bdeff90dd7ed9964e8c77146e478a6ed37a579a",
+      "modified": false
+    },
+    {
+      "name": "_teaching_video",
+      "kind": "function",
+      "source_lines": {
+        "start": 3243,
+        "end": 3252
+      },
+      "original_segment_sha256": "1a1491e1b480b43c88414c0086d30b6112159f739d98bc25f55eeb732a0d869f",
+      "modified": false
+    },
+    {
+      "name": "_default_substitutions",
+      "kind": "function",
+      "source_lines": {
+        "start": 3255,
+        "end": 3263
+      },
+      "original_segment_sha256": "a735662dd7faf7e06877ca6d7aff1f795106ff8317d2c8edc1ccc91b1888208a",
+      "modified": false
+    }
+  ],
+  "constants": [
+    {
+      "name": "VALID_GOALS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 16,
+        "end": 22
+      },
+      "original_segment_sha256": "a0c0d209771b5d29d504bc006aa434e97646592216a0f6afb147dbcd5c7053f5",
+      "modified": false
+    },
+    {
+      "name": "DIRECT_TEACHING_VIDEOS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 46,
+        "end": 167
+      },
+      "original_segment_sha256": "4f818cd12d5524871184f99b9cd3f142735f84ff169f018591ccde8ad6396168",
+      "modified": false
+    },
+    {
+      "name": "BEGINNER_SESSION_VIDEOS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 169,
+        "end": 194
+      },
+      "original_segment_sha256": "d6944aa3575203aa848810664427a6853a50d157edba3f6423d3acba77823efd",
+      "modified": false
+    },
+    {
+      "name": "HEALTH_HOME_SESSION_VIDEOS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 196,
+        "end": 209
+      },
+      "original_segment_sha256": "65a13b68419f3e5bd2e75d7c2427f09873a7537b9cfe356d5d597cf10291f98c",
+      "modified": false
+    },
+    {
+      "name": "WARMUP_TEACHING_VIDEOS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 211,
+        "end": 236
+      },
+      "original_segment_sha256": "2069bb641c15f290ede3f7085756e9aea8c7a701d612ac3c038129f20eea9266",
+      "modified": false
+    },
+    {
+      "name": "MIN_REST_SECONDS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 2148,
+        "end": 2148
+      },
+      "original_segment_sha256": "905e8adbda951be4c852b1bafb8a8981f30e6bcc0c5409e53fee9ed09b3450f7",
+      "modified": false
+    },
+    {
+      "name": "LONG_REST_SECONDS",
+      "kind": "constant",
+      "source_lines": {
+        "start": 2149,
+        "end": 2149
+      },
+      "original_segment_sha256": "ef1ddc53421c749eb371d8022f8a0b55d5ee98e3618eea31c51f1b0d1d87794c",
+      "modified": false
+    },
+    {
+      "name": "HEAVY_REST_EXERCISES",
+      "kind": "constant",
+      "source_lines": {
+        "start": 2151,
+        "end": 2163
+      },
+      "original_segment_sha256": "5e5588acec5ed3cb49b5a4b6694c06f7e8ab0fe8b6516e245dd0119a23fd74e0",
+      "modified": false
+    }
+  ],
+  "changes": [
+    {
+      "symbol": "enrich_workout_plan",
+      "source_lines": {
+        "start": 1613,
+        "end": 1625
+      },
+      "before": "Call enrich_catalog_exercise for every prescribed exercise to attach optional exercise dataset metadata.",
+      "after": "Return dict(plan); preserve original training prescriptions, exercise details and original teaching links without reading any catalog data.",
+      "reason": "Keep the guest trial independent and exclude the full exercise catalog from this stage."
+    }
+  ],
+  "excluded": [
+    "Old api.py and storage.py",
+    "AI/provider functions, os imports and environment variables",
+    "Full exercise catalog and catalog files",
+    "Nutrition, community, measurement and account features",
+    ".env files, personal databases, uploaded photos and dependency/build folders"
+  ],
+  "preserved_behavior": [
+    "Beginner follow-along templates may return four training days regardless of requested days.",
+    "Health templates have a minimum of two training days.",
+    "Muscle-gain named templates use their original fixed three, four or five training-day structures.",
+    "The returned days_per_week describes the selected plan; the frontend must disclose when it differs from the request."
+  ]
+}

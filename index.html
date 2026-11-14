@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GymPath 为健身新手和恢复训练的同学提供训练计划、动作说明和练后反馈演示。">
+    <title>GymPath / 训练计划与动作指南</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261012-public2">
+    <script src="script.js?v=20261012-public2" defer></script>
+  </head>
+  <body class="marketing-page">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="GymPath 首页">
+          <img src="assets/mark.svg" width="34" height="34" alt="">
+          <span>GYMPATH</span><small>学生训练规划</small>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+        <nav id="site-nav" class="site-nav" aria-label="主导航">
+          <a href="#features">功能</a>
+          <a href="#preview">示例</a>
+          <a href="#steps">使用方法</a>
+          <a href="#faq">FAQ</a>
+          <a href="account.html">注册 / 登录</a>
+          <a class="nav-cta" href="trial.html">试用计划 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> GYMPATH / TRAINING PLAN</p>
+          <h1 id="hero-title">先看计划，<br><em>再去训练。</em></h1>
+          <p class="hero-lede">为刚开始健身或恢复训练的同学安排训练。选择水平、目标和可用时间，查看热身、动作、组数和休息。</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="trial.html">生成一份计划 <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#preview">查看训练示例 <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="microcopy">先试用，再决定。注册后可保存计划，随时查看。</p>
+        </div>
+        <div class="hero-art" aria-label="GymPath 训练路径：计划、动作、反馈" role="img">
+          <img src="assets/training-path.svg?v=20261012-public2" alt="训练路径图：Plan、Move、Feedback 三个节点由一条虚线连接">
+          <div class="art-caption"><span>GYMPATH / 01</span><span>PLAN → MOVE → FEEDBACK</span></div>
+        </div>
+      </section>
+
+      <section class="signal-band" aria-label="项目说明">
+        <div class="shell signal-grid">
+          <p><strong>训练计划</strong><br>按水平、目标和时间安排</p>
+          <p><strong>动作指南</strong><br>查看组数、次数和休息</p>
+          <p><strong>个人账号</strong><br>保存并查看训练计划</p>
+        </div>
+      </section>
+
+      <section id="features" class="section shell" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / WHY GYMPATH</p>
+          <h2 id="features-title">训练安排，<br><span>一目了然。</span></h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-card-dark"><span class="card-index">01</span><h3>生成训练计划</h3><p>按水平、目标、每周次数和可用时间安排训练。</p><span class="card-tag">TRAINING PLAN</span></article>
+          <article class="feature-card"><span class="card-index">02</span><h3>查看动作说明</h3><p>查看热身、动作要点、组数、次数和休息时间。</p><span class="card-tag">WARM-UP / MOVE</span></article>
+          <article class="feature-card"><span class="card-index">03</span><h3>体验练后反馈</h3><p>选择疲劳程度和不适情况，查看调整训练的示例建议。</p><span class="card-tag">POST-SESSION</span></article>
+        </div>
+        <p class="section-note">训练计划可直接试用，练后反馈目前仅提供演示。</p>
+      </section>
+
+      <section id="preview" class="section section-preview shell" aria-labelledby="preview-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">02 / PREVIEW</p>
+          <h2 id="preview-title">先看三个<br><span>训练示例。</span></h2>
+        </div>
+        <div class="preview-layout">
+          <div class="preview-tabs" role="tablist" aria-label="训练示例类型">
+            <button id="preview-start" class="preview-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="preview-panel" data-preview="start">健身入门 <span>01</span></button>
+            <button id="preview-strength" class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="preview-panel" data-preview="strength">基础力量 <span>02</span></button>
+            <button id="preview-recovery" class="preview-tab" type="button" role="tab" aria-selected="false" aria-controls="preview-panel" data-preview="recovery">恢复训练 <span>03</span></button>
+          </div>
+          <article id="preview-panel" class="preview-panel" role="tabpanel" aria-labelledby="preview-start" tabindex="0">
+            <div class="preview-meta"><span id="preview-kicker">STARTER / DAY 01</span><span id="preview-duration">固定示例</span></div>
+            <h3 id="preview-title-text">健身入门</h3>
+            <p id="preview-description">从热身、深蹲和俯卧撑开始，练习基本动作。</p>
+            <div id="preview-items" class="preview-items"><span>全身热身</span><span>杯式深蹲</span><span>斜板俯卧撑</span></div>
+            <a id="preview-link" class="text-link" href="demo.html?plan=start">打开这个示例 <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section id="steps" class="section steps-section" aria-labelledby="steps-title">
+        <div class="shell">
+          <div class="section-heading compact-heading"><p class="eyebrow">03 / HOW TO USE</p><h2 id="steps-title">怎样<br><span>开始使用？</span></h2></div>
+          <ol class="steps-list">
+            <li><span class="step-no">01</span><div><h3>选择训练偏好</h3><p>填写水平、目标、每周次数和每次可用时间。</p></div><span class="step-arrow" aria-hidden="true">↘</span></li>
+            <li><span class="step-no">02</span><div><h3>查看训练安排</h3><p>选择训练日，展开动作说明，查看组数和休息时间。</p></div><span class="step-arrow" aria-hidden="true">↘</span></li>
+            <li><span class="step-no">03</span><div><h3>保存计划</h3><p>登录后保存到账号，或打印完整安排。</p></div><span class="step-arrow" aria-hidden="true">↘</span></li>
+            <li><span class="step-no">04</span><div><h3>体验反馈演示</h3><p>在演示页选择疲劳和不适情况，查看反馈示例。</p></div><span class="step-arrow" aria-hidden="true">↗</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="faq" class="section shell faq-section" aria-labelledby="faq-title">
+        <div class="section-heading compact-heading"><p class="eyebrow">04 / FAQ</p><h2 id="faq-title">常见<br><span>问题。</span></h2></div>
+        <div class="faq-list">
+          <details open><summary>需要注册吗？<span>+</span></summary><p>生成计划无需账号。想保存计划，可以<a href="account.html">注册或登录</a>。</p></details>
+          <details><summary>演示会保存填写的内容吗？<span>+</span></summary><p>不会。演示表单不提交、不保存信息，刷新后重置。</p></details>
+          <details><summary>生成计划会提交信息吗？<span>+</span></summary><p>四项偏好会发送到 GymPath 服务，用于生成计划。只有登录后点击“保存到账号”，才会保存计划和偏好。</p></details>
+          <details><summary>计划适合所有人吗？<span>+</span></summary><p>计划按训练偏好安排，未评估个人身体情况，不适用于医疗或伤病康复。预计时间含热身和休息，实际用时可能更长。</p></details>
+          <details><summary>账号保存哪些内容？<span>+</span></summary><p>保存用户名、密码校验值和你主动保存的计划。密码不以明文存储，不需要身体资料或照片。</p></details>
+        </div>
+      </section>
+
+      <section class="final-cta shell" aria-labelledby="cta-title">
+        <div><p class="eyebrow">GET STARTED</p><h2 id="cta-title">生成你的<br><em>训练计划。</em></h2></div>
+        <div class="final-actions"><a class="button button-light" href="trial.html">生成训练计划 <span aria-hidden="true">↗</span></a><a class="button button-outline" href="account.html">注册 / 登录 <span aria-hidden="true">↗</span></a></div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="shell footer-inner"><span>GYMPATH</span><a href="#main-content">返回顶部 ↑</a><a href="account.html">我的账号 ↗</a></div></footer>
+  </body>
+</html>

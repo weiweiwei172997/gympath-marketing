@@ -1,0 +1,4 @@
+# Optional PythonAnywhere WSGI bridge; no change to the native frontend.
+-r requirements-trial.txt
+a2wsgi==1.10.10
+Werkzeug==3.1.9

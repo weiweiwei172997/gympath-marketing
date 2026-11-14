@@ -1,0 +1,6 @@
+# Optional local plan service; the static website does not need Python.
+-c requirements-runtime.lock
+fastapi>=0.110,<1
+uvicorn>=0.29,<1
+# The strict input schema uses Pydantic 2 APIs explicitly.
+pydantic>=2.6,<3
